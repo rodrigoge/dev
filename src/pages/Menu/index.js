@@ -8,16 +8,15 @@ export default function Menu(){
 
         const menuSection = document.querySelector(".menu-section")
         const menuToggle = menuSection.querySelector(".menu-toggle")
-
+        
         if(menuToggle.click){
             if(!menuSection.classList.contains("on")){
-                document.body.style.overflow = show ? "hidden" : "initial"
-                menuSection.classList.toggle("on", show)
+                menuSection.classList.add("on", show)
+                show = !show;
             } else {
-                document.body.style.overflow = !show ? "hidden" : "initial"
                 menuSection.classList.remove("on", !show)
             }
-        }
+        } 
     }
 
     return(

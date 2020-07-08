@@ -17,7 +17,6 @@ export default function Home(){
 
                 <div className="social-medias">
                     <a href="https://github.com/rodrigoge" target="blank">
-                        <img src="" alt=""/>
                         GitHub
                     </a>
 
